@@ -54,9 +54,10 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a span{
-    color: green;
+nav ul li a:hover,nav a.active{
+    color: #01a131;
 }
+
 
 nav ul li a::after{
     content: '';
@@ -155,6 +156,14 @@ nav ul li a:hover::after{
     .text-about{
         max-width: 400px;
     }
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .kontakinfo{
+        width: 100%;
+    }
 
 }
 
@@ -232,14 +241,7 @@ nav ul li a:hover::after{
         justify-content: center;
     }
 
-
-    .container-contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    
+  
 
 }  
 
