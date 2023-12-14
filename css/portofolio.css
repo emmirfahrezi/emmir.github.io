@@ -206,7 +206,7 @@ nav ul li a:hover::after{
     }
     
     .profile{
-        top: 600px;
+        top: 480px;
         left: -510px;      
         max-width: 230px;
     }
@@ -232,12 +232,6 @@ nav ul li a:hover::after{
         justify-content: center;
     }
 
-    .bokontak{
-        flex: flex;
-        flex-direction: column;
-        border-radius: 50%;
- 
-    }
 
     .container-contact{
         display: flex;
