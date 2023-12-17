@@ -156,12 +156,20 @@ nav ul li a:hover::after{
     .text-about{
         max-width: 400px;
     }
+
+
     .container-contact{
+        width: 100%;
         display: flex;
         flex-direction: column;
-    }  
+        justify-content: flex-start;
+    }
+    
+    .container-contact .kontakinfo{
+        width: 100%;
+    }
 
-    .kontakinfo{
+    .container-contact .kontakform{
         width: 100%;
     }
 
@@ -240,6 +248,12 @@ nav ul li a:hover::after{
         text-align: center;
         justify-content: center;
     }
+
+    .container-contact .kontakinfo{
+        width: 100%;
+    }
+
+ 
 
   
 
@@ -557,7 +571,6 @@ h2, h3, p{
 .contact{
     padding: 50px 100px;
     position: relative;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,7 +593,6 @@ h2, h3, p{
 
 
 .container-contact{
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
