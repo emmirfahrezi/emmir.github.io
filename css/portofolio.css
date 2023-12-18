@@ -253,6 +253,11 @@ nav ul li a:hover::after{
         width: 100%;
     }
 
+    .overlay img{
+        width: 250px;
+        margin-left: -80px;
+    }
+
  
 
   
@@ -394,6 +399,50 @@ h2, h3, p{
 .btn-about{
     position: relative;
     top: 20px;
+}
+
+.overlay{
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.overlay img{
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img{
+    animation: fadeAjah 1s;
+}
+
+.overlay .close{
+    background-color: #eaeaea;
+    color: #312f2f;
+    top: 80px;
+    position: absolute;
+    
+}
+
+.overlay:target .close{
+    animation: slideDownFade .5s .5s forwards;
 }
 
 /* ------------------about finish------- */
