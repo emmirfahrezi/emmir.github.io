@@ -44,8 +44,11 @@
       <div data-aos="fade-right" class="header-home">
         <p>Web Developer</p>
         <h1>Halo, <span> I`m Emmir </span><br />From Bintan Island</h1>
-        <img data-aos="fade-up" src="./gallery/profile/profile.png"
-        class="profile" ">
+        <img
+          data-aos="fade-up"
+          src="./gallery/profile/profile.png"
+          class="profile"
+        />
         <div data-aos="fade-down" class="box"></div>
       </div>
 
@@ -200,8 +203,8 @@
       <div class="container">
         <h1 class="sub-title">Curiculum Vitae</h1>
         <div class="work-list">
-          <div class="work">
-            <img data-aos="fade-up" src="./gallery/CV/atlet.jpg" alt="" />
+          <div data-aos="fade-up" class="work">
+            <img src="./gallery/CV/atlet.jpg" alt="https://pin.it/6wIEi2N" />
             <div class="layer-2">
               <h2>ATLET</h2>
             </div>
@@ -210,12 +213,15 @@
               <p>
                 Saya sudah dari sd bermain voli, dan menjadikan permainan ini
                 sebgai hobi, dan terkadang juga sering ikut kejuaraan antar
-                kampung atau antar daerah. Saya berposisi sebagai all roll.
+                kampung atau antar daerah. Saya berposisi sebagai all role.
               </p>
             </div>
           </div>
           <div data-aos="fade-up" class="work">
-            <img src="./gallery/CV/pendidikan.jpg" alt="" />
+            <img
+              src="./gallery/CV/pendidikan.jpg"
+              alt="https://pin.it/4EfmO33"
+            />
             <div class="layer-2">
               <h2>PENDIDIKAN</h2>
             </div>
@@ -229,7 +235,7 @@
             </div>
           </div>
           <div data-aos="fade-up" class="work">
-            <img src="./gallery/CV/prestasi.jpg" alt="" />
+            <img src="./gallery/CV/prestasi.jpg" alt="https://pin.it/2M1Cz5J" />
             <div class="layer-2">
               <h2>PRESTASI</h2>
             </div>
@@ -280,18 +286,18 @@
           </div>
         </div>
         <div data-aos="fade-up" class="kontakform">
-          <form action="">
+          <form name="Formulir Kontak">
             <h2>Kirim Pesan</h2>
             <div class="inputbox">
-              <input type="text" name="nama" required />
+              <input type="text" name="Nama" required />
               <span>Nama Panjang</span>
             </div>
             <div class="inputbox">
-              <input type="text" name="email" required />
+              <input type="text" name="Email" required />
               <span>Email</span>
             </div>
             <div class="inputbox">
-              <textarea name="" id="" rows="4" required></textarea>
+              <textarea name="Pesan Kamu" id="" rows="4" required></textarea>
               <span>Ketik pesan mu....</span>
             </div>
             <div class="inputbox">
@@ -305,6 +311,19 @@
     <footer>
       <p class="copy">Copyright 2023. Emmir Fahrezi</p>
     </footer>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyIAQGPQnmvL81JWivI7aXTRs-Z3ugAUYInesdZnBc6L8cnDCo2dfzLCcwjcwIzkaFgKQ/exec";
+      const form = document.forms["Formulir Kontak"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
   <script src="./javascript/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
