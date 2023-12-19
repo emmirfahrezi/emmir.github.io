@@ -223,8 +223,8 @@ nav ul li a:hover::after{
     }
     
     .profile{
-        top: 480px;
-        left: -510px;      
+        top: 400px;
+        left: -500px;      
         max-width: 230px;
     }
     
@@ -256,6 +256,21 @@ nav ul li a:hover::after{
     .overlay img{
         width: 250px;
         margin-left: -80px;
+    }
+
+    .h-ikon .ikon-home a{
+        font-size: 20px;
+        min-width: 40px;
+        height: 40px;
+        bottom: 30px;
+        
+    }
+
+    .header-home .h-ikon{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 40px;
     }
 
  
@@ -319,23 +334,24 @@ section{
 }
 
 .h-ikon{
-    gap: 2rem;
+    gap: 1rem;
     display: flex;
     flex-direction: row;
 }
 
-.ikon-home{
+.ikon-home a{
     min-width: 50px;
     height: 50px;
-    color: white;
+    color: rgb(254, 252, 252);
     background-color: green;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     align-items: center;
+    font-size: 25px;
 }
 
-.ikon-home:hover{
+.ikon-home a:hover{
     color: #01a131;
     background-color: #eaeaea;
     cursor: pointer;
