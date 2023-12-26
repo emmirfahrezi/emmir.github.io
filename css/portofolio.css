@@ -469,7 +469,7 @@ h2, h3, p{
 }
 
 .overlay:target img{
-    animation: fadeAjah 1s;
+    animation: ImageIn 1s;
 }
 
 .overlay .close{
@@ -481,7 +481,7 @@ h2, h3, p{
 }
 
 .overlay:target .close{
-    animation: slideDownFade .5s .5s forwards;
+    animation: HeaderIn .5s .5s forwards;
 }
 
 /* ------------------about finish------- */
@@ -499,7 +499,7 @@ h2, h3, p{
 
 .header-skill h1{
     position: relative;
-    bottom: -30px;
+    bottom: -10px;
 }
 
 .container-skill{
